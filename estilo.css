@@ -5,6 +5,15 @@
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
 }
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.mov{
+    scroll-margin-top: 85px;
+}
 /*propiedades para todos esos elementos*/
 h1,h2,a{
     font-weight: 600;
@@ -14,7 +23,7 @@ a{
     text-decoration: none;
 }
 /*tamaño foto cabecera*/
-.cabecera img{
+.cabecera .imagencab{
     width: 135px;
     padding: 5px 0px;
 }
@@ -32,13 +41,19 @@ a{
 .links a{
     color: white;
     padding-right: 35px;
-    font-size: 17px;
+    font-size: 15px;
 }
 /*una pequeña animacion para cuando pasas
 el mouse por encima de los links de la cabecera*/
 .links a:hover{
     text-decoration: underline;
 }
+
+.cabecera .lista{
+    display: none;
+}
+
+
 /*decoro y posiciono la imgen del hero*/
 .hero{
     background-image: url(imagenes/FondoHero.jpg);
@@ -99,6 +114,7 @@ del hero*/
     left: 12%;
     top: 27%;
 }
+
 /*proporcion de la section*/
 .noticias{
     height: 90vh;
@@ -180,7 +196,7 @@ del hero*/
 
 /*modifique tamaño y fondo del ebook*/
 .Fixture{
-    height: 45vh;
+    height: 40vh;
     background:linear-gradient(30deg,#1d5981,#2980B9);
 }
 /*modifique el contenido*/
@@ -192,7 +208,7 @@ del hero*/
     text-align: center;
     width: 40%;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 40px;
     
 }
 /*modifique el h1*/
@@ -228,11 +244,11 @@ del hero*/
 }
 /*cambie el tamaño del div*/
 .videoFutbol{
-    height: 60vh;
+    height: 50vh;
 }
 /*modifique el video del perro*/
 .videoFutbol video{
-    height: 60%;
+    height: 50%;
     width: 100%;
     object-fit: cover;
     position: absolute;
@@ -244,29 +260,29 @@ del hero*/
     font-size: 68px;
     width: 32%;
     line-height: 95px;
-    left: 55%;
-    top: 250%;
+    left: 57%;
+    top: 245%;
     position: absolute;
     z-index: 0;
 }
 /*le puse una capa rosa al video del perro*/
 .capa{
     position: absolute;
-    height: 60%;
+    height: 50%;
     width: 100%;
     background:linear-gradient(30deg,#1d5981,#2980B9);
     opacity: 0.7;
     z-index: -1;
     left: 0;
-    top: 235%;
+    top: 230%;
     mix-blend-mode: overlay;
 }
 /*separo y dimensiono la seccion about*/
 .about{
-    
-    height: 68vh;
+    height: 81vh;
     display: flex;
     justify-content: space-evenly;
+    padding-top: 30px;
 }
 /*dimensiono la parte informativa del about*/
 .aboutInfo{
@@ -283,7 +299,7 @@ del hero*/
 /*decoro el texto del about*/
 .aboutInfo p{
     color: black;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 30px;
     padding-top: 25px;
 }
@@ -346,7 +362,7 @@ del hero*/
     height: 72%;
     position: absolute;
     left: 68%;
-    top: 295%;
+    top: 288%;
     z-index: -1;
 }
 /*doy tamaño y fondo a la section*/
@@ -419,7 +435,7 @@ lado del otro*/
 }
 /* modifique la seccion */
 .Mejores{
-    height: 88vh;
+    height: 90vh;
     display: flex;
     width: 85%;
     margin: 0 auto;
@@ -620,7 +636,7 @@ lado del otro*/
     margin: 0 auto;
 }
 /*cambios de color de los iconos*/
-.logos i,a{
+.logos i,.logos a{
     color:white;
     font-size:23px;
     margin-top: 90px;
@@ -639,4 +655,46 @@ lado del otro*/
     justify-content: center;
     font-size: 13px;
     color: #2980B9;
+}
+
+@media(max-width:767px){
+    main{
+        width: 100vw;
+    }
+    .cabecera .imagencab{
+    width: 80px;
+    padding: 10px 0px;
+    }
+    .links a{
+        display: none;
+    }
+    .cabecera .lista{
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+    .contHero{
+        width: 60%;
+    }
+    .contHero h1{
+        font-size: 55px;
+        color: white;   
+    }
+    .contHero p{
+        font-size: 19px;
+        line-height: 24px;
+        
+    }
+    /*decoro el a del texto*/
+    .contHero a{
+        background-color:#2980B9;
+        color:white;
+        border-radius: 15px;
+        padding: 15px 25px;
+        font-size: 17px;
+        transition-property: background-color,color;
+        transition-duration: 0.6s;
+        font-weight: 600;
+        margin-top: 20px;
+    }
 }

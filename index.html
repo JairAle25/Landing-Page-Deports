@@ -10,21 +10,23 @@
 </head>
 <body>
     <!--cabecera-->
-    <header class="cabecera">
-        <img src="imagenes/logo.png" alt="">
+    <header class="cabecera mov">
+        <a href="#hero" class="linkCab"><img src="imagenes/logo.png" alt="" class="imagencab"></a>
         <nav class="links">
-            <a href="">Ultimas Noticias</a>
-            <a href="">Fixture</a>
-            <a href="">Sobre Nosotros</a>
-            <a href="">Entrevistas</a>
-            <a href="">Fichajes</a>
-            <a href="">Suscribete</a>
+            <a href="#noticias">Ultimas Noticias</a>
+            <a href="#fixture">Fixture</a>
+            <a href="#about">Sobre Nosotros</a>
+            <a href="#entrev">Entrevistas</a>
+            <a href="#mejores">Mejores Jugadores</a>
+            <a href="#fichaje">Fichajes</a>
+            <a href="#susc">Suscribete</a>
+            <i class="bi bi-list lista"></i>
         </nav>
     </header>
 
     <main>
         <!--Hero-->
-        <section class="hero">
+        <section class="hero mov" id="hero">
             <div class="contHero">
                 <h1>El Deporte<br> en Directo</h1>
                 <p>Mantente informado con nuestras noticias deportivas en vivo, cubriendo los eventos mas importantes del munndo ,entrevistas exclusivas, rumores y mas</p>
@@ -33,7 +35,7 @@
         </section>
 
         <!--Ultimas noticias-->
-        <section class="noticias">
+        <section class="noticias mov" id="noticias">
             <h1>Ultimas Noticias</h1>
             <div class="cajasNoticias">
                 <div class="caja">
@@ -57,8 +59,8 @@
             </div>
         </section>
 
-        <!--Ebooks-->
-        <section>
+        <!--Fixture-->
+        <section id="fixture" class="mov">
             <div class="Fixture">
                 <div class="FixtureCont">
                     <h1>Fixture</h1>
@@ -66,16 +68,16 @@
                     <a href="">Descarga el Fixture</a>
                 </div>
             </div>
-                <div class="videoFutbol">
-                    <video src="imagenes/videoFutbol.mp4" muted autoplay loop></video>
-                    <h1>El Deporte<br> une al Mundo</h1>
-                </div>
-                <div class="capa"></divclass>
+            <div class="videoFutbol">
+                <video src="imagenes/videoFutbol.mp4" muted autoplay loop></video>
+                <h1>El Deporte<br> une al Mundo</h1>
+            </div>
+            <div class="capa"></divclass>
         </section>
 
 
         <!--About Us-->
-        <section class="about">
+        <section class="about mov" id="about">
             <div class="aboutInfo">
                 <h1>Sobre Nosotros</h1>
                 <p>Somos un equipo apasionado por los deportes y la comunicación. Nuestra misión es brindarte las noticias más relevantes del mundo deportivo de manera clara, concisa y objetiva. Nos esforzamos por ofrecerte una experiencia informativa única, manteniéndonos siempre actualizados y comprometidos con la calidad de nuestro contenido.</p>
@@ -108,8 +110,8 @@
             <img src="imagenes/FondoAbout.png" alt="" class="forma">
         </section>
 
-        <!--Reviews-->
-        <section class="Entrevista">
+        <!--Entrevistas-->
+        <section class="Entrevista mov" id="entrev">
             <h1>Entrevistas deportistas</h1>
             <div class="items">
                 <div class="informacion">
@@ -131,8 +133,8 @@
             <img src="imagenes/Entrevista.png" alt="">
         </section>
 
-        <!--Productos unicos-->
-        <section class="Mejores">
+        <!--Mejores Jugadores-->
+        <section class="Mejores mov" id="mejores">
             <div class="izq">
                 <img src="imagenes/messiThebest.jpg" alt="">
             </div>
@@ -150,8 +152,8 @@
             </div>
         </section>
 
-        <!--Warranty (Garantia)-->
-        <section class="rumores">
+        <!--Fichajes-->
+        <section class="rumores mov" id="fichaje">
             <div class="cont">
                 <h1>Rumores de fichajes</h1>
                 <p>Descubre todos los rumores de fichaje en el mundo del fútbol en nuestra pagina. ¡Mantente informado y no te pierdas ningún detalle!</p>
@@ -159,8 +161,8 @@
             </div>
         </section>
 
-        <!--Contacto-->
-        <section class="Suscribirse">
+        <!--Suscribirse-->
+        <section class="Suscribirse mov" id="susc">
             <h1>Suscribite a Nuestra Pagina</h1>
                 <form action="" class="formulario">
                     <div class="pegados">
