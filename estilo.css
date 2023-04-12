@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+/*propiedades para todos esos elementos*/
+h1,h2,a{
+    font-weight: 600;
+}
+/*para todas los links*/
+a{
+    text-decoration: none;
+}
+/*tamaño foto cabecera*/
+.cabecera img{
+    width: 135px;
+    padding: 5px 0px;
+}
+/*diseño de la cabecera*/
+.cabecera{
+    background-color: #1d5981;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%; 
+    z-index: 1; 
+}
+/*diseño link de la cabecera*/
+.links a{
+    color: white;
+    padding-right: 35px;
+    font-size: 17px;
+}
+/*una pequeña animacion para cuando pasas
+el mouse por encima de los links de la cabecera*/
+.links a:hover{
+    text-decoration: underline;
+}
+/*decoro y posiciono la imgen del hero*/
+.hero{
+    background-image: url(imagenes/FondoHero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+/*pongo el difuminado rosa arriba de la foto*/
+.hero::before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background:linear-gradient(30deg,#1d5981,#2980B9);
+    opacity: 0.7;
+}
+/*decoro el h1 del texto*/
+.contHero h1{
+    font-size: 80px;
+    color: white;
+}
+/*decoro el p del texto*/
+.contHero p{
+    font-size: 22px;
+    color: white;
+    padding-top: 30px;
+    line-height: 38px;
+}
+/*decoro el a del texto*/
+.contHero a{
+    background-color:#2980B9;
+    color:white;
+    border-radius: 15px;
+    padding: 18px 32px;
+    font-size: 20px;
+    transition-property: background-color,color;
+    transition-duration: 0.6s;
+    font-weight: 600;
+    margin-top: 40px;
+}
+/*le doy animacion al link del hero*/
+.contHero a:hover{
+    background-color: #FFFFFF;
+    color: #2980B9;
+}
+/*decoro y acomodo en el lugar a todo el contenido
+del hero*/
+.contHero{
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    left: 12%;
+    top: 27%;
+}
+/*proporcion de la section*/
+.noticias{
+    height: 90vh;
+}
+/*modifico el h1*/
+.noticias h1{
+    display: flex;
+    justify-content: center;
+    color: #1d5981;
+    font-size: 55px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    width: 30%;
+    margin: 0 auto;
+}
+/*modifico las cajas*/
+.caja{
+    width: 30%;
+    height: 69vh;
+    display: flex;
+    flex-direction: column;
+}
+/*modifico las imagenes de las cajas*/
+.imgcajas{
+    width: 70%;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(138, 137, 137);
+    margin: 0 auto;
+}
+/*modifico el subtitulo de las cajas*/
+.cajasNoticias .subtitulo{
+    color: #1d5981;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 17px;
+    text-align: center;
+}
+/*modifico el texto de las cajas*/
+.cajasNoticias .texto{
+    font-size: 14px;
+    color:black;
+    line-height: 28px;
+    text-align: center;
+}
+/*modifico los botones de las cajas*/
+.cajasNoticias a{
+    background-color:#2980B9;
+    color:white;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 50%;
+    padding: 15px 22px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgb(127, 127, 127);
+    display: flex;
+    justify-content: center;
+    transition-property: background-color,color;
+    transition-duration: 0.6s;
+    font-weight: 600;
+}
+/*le doy animacion a los botones*/
+.cajasNoticias a:hover{
+    background-color: #FFFFFF;
+    color: #2980B9;
+}
+/*modifico tamaño de las 3 cajas en conjunto*/
+.cajasNoticias{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    height: 69%;
+}
+
+
+
+/*modifique tamaño y fondo del ebook*/
+.Fixture{
+    height: 45vh;
+    background:linear-gradient(30deg,#1d5981,#2980B9);
+}
+/*modifique el contenido*/
+.FixtureCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 60px;
+    
+}
+/*modifique el h1*/
+.FixtureCont h1{
+    font-size: 55px;
+    color: white;
+}
+/*modifique el texto*/
+.FixtureCont p{
+    color: white;
+    padding-top: 28px;
+    font-size: 19px;
+    line-height: 30px;
+}
+/*hice el botton con una transicion*/
+.FixtureCont a{
+    background-color:white;
+    color:#2980B9;
+    margin-top: 25px;
+    padding: 14px 22px;
+    font-size: 17px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    transition-property: background-color,color;
+    transition-duration: 0.6s;
+    font-weight: 600;
+}
+/*animacion del boton*/
+.FixtureCont a:hover{
+    background-color: #2980B9;
+    color: white;
+}
+/*cambie el tamaño del div*/
+.videoFutbol{
+    height: 60vh;
+}
+/*modifique el video del perro*/
+.videoFutbol video{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+/*modifique y acomode el h1*/
+.videoFutbol h1{
+    color: white;
+    font-size: 68px;
+    width: 32%;
+    line-height: 95px;
+    left: 55%;
+    top: 250%;
+    position: absolute;
+    z-index: 0;
+}
+/*le puse una capa rosa al video del perro*/
+.capa{
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    background:linear-gradient(30deg,#1d5981,#2980B9);
+    opacity: 0.7;
+    z-index: -1;
+    left: 0;
+    top: 235%;
+    mix-blend-mode: overlay;
+}
+/*separo y dimensiono la seccion about*/
+.about{
+    
+    height: 68vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*dimensiono la parte informativa del about*/
+.aboutInfo{
+    width: 26%;
+    margin-left: 60px;
+}
+/*decoro el h1 del about*/
+.aboutInfo h1{
+    color: #1d5981;
+    font-weight: 600;
+    font-size: 53px;
+    padding-top: 55px;
+}
+/*decoro el texto del about*/
+.aboutInfo p{
+    color: black;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 25px;
+}
+/*muevo las cajas*/
+.aboutCajas{
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right:140px;
+}
+/*decore y le di borde a las cajas*/
+.aboutCajas .cajas{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 15px 0px;
+    padding-right: 10px;
+    padding-left: 58px;
+    box-shadow: 3px 3px 20px rgb(127, 127, 127);
+
+}
+/*puse la primera p en negrita*/
+.aboutCajas .cajas .negritas{
+    font-weight: 600;
+    font-size: 15px;
+    
+} 
+/*modifique el texto*/
+.aboutCajas .cajas .texto{
+    font-size: 14px;
+    padding-top: 7px;
+}
+/*movi y modifique la imagen*/
+.aboutCajas .aboutImg1{
+    position: absolute;
+    left: 54%;
+    top: 303.5%;
+    width: 80px;
+    border-radius: 7px;
+}
+/*movi y modifique la imagen*/
+.aboutCajas .aboutImg2{
+    position: absolute;
+    left: 53.5%;
+    top: 324.3%;
+    width: 90px;
+    border-radius: 7px;
+}
+/*movi y modifique la imagen*/
+.aboutCajas .aboutImg3{
+    position: absolute;
+    left: 53.5%;
+    top: 345.5%;
+    width: 87px;
+    border-radius: 7px;
+}
+/*hice la forma que esta atras de las cajas*/
+.forma{
+    width: 23%;
+    height: 72%;
+    position: absolute;
+    left: 68%;
+    top: 295%;
+    z-index: -1;
+}
+/*doy tamaño y fondo a la section*/
+.Entrevista{
+    background-color: rgba(169, 169, 148, 0.1);
+    height: 85vh;
+}
+/*modifique el h1*/
+.Entrevista h1{
+    font-size: 55px;
+    width: 40%;
+    color: #1d5981;
+    margin: 0 auto;
+    padding-top: 55px;
+    padding-bottom: 50px;
+}
+/*puse la informacion uno al 
+lado del otro*/
+.Entrevista .items{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+/*le di tamaño a cada cuadro de info*/
+.items .informacion{
+    width: 30%;
+}
+/*modifique todos los h2*/
+.items .informacion h2{
+    font-size: 27px;
+    color: #1d5981;
+}
+/*modifique todos los p*/
+.items .informacion p{
+    padding-top: 20px;
+    font-size: 16px;
+    color: black;
+    line-height: 29px;
+}
+.items a{
+    background-color:#2980B9;
+    color:white;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 50%;
+    padding: 15px 22px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgb(127, 127, 127);
+    display: flex;
+    justify-content: center;
+    transition-property: background-color,color;
+    transition-duration: 0.6s;
+    font-weight: 600;
+}
+
+.items a:hover{
+    background-color: #FFFFFF;
+    color: #2980B9;
+}
+/*coloque la imagen*/
+.Entrevista img{
+    position: absolute;
+    left: 3%;
+    top: 429%;
+    z-index: -1;
+    width: 130px;
+}
+/* modifique la seccion */
+.Mejores{
+    height: 88vh;
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.text{
+    width: 54%;
+    margin: 0 auto;
+}
+.text .cont{
+    width: 60%;
+    margin: 0 auto;
+}
+/*modifique el h1 del texto*/
+.Mejores .text h1{
+    font-size: 55px;
+    color: #1d5981;
+    padding-bottom: 40px;
+}
+/*modique los parrafos*/
+.Mejores .text p{
+    font-size: 16px;
+    color: black;
+    padding-bottom: 25px;
+    line-height: 28px;
+    justify-content: center;
+}
+/*puse con color rosa la primera frase*/
+.Mejores .text span{
+    color:#1d5981;
+    font-weight: 600;
+}
+.Mejores .izq{
+    width: 46%;
+}
+/*acomode la imagen*/
+.Mejores img{
+    width: 320px;
+    margin-left: 100px;
+    border-radius: 15px;
+}
+/*Modique esa section*/
+.rumores{
+    height: 45vh;
+    background:linear-gradient(30deg,#1d5981,#2980B9);
+}
+/*Modifico el contenido*/
+.rumores .cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 60px;
+    
+}
+/*modifique el h1*/
+.rumores h1{
+    font-size: 55px;
+    color: white;
+}
+/*modifique el parrafo*/
+.rumores p{
+    color: white;
+    padding-top: 28px;
+    font-size: 17px;
+    line-height: 30px;
+    
+}
+/*modifique los botones*/
+.rumores a{
+    background-color: #FFFFFF;
+    color: #2980B9;
+    margin-top: 29px;
+    padding: 15px 26px;
+    font-size: 17px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    transition-property: background-color,color;
+    transition-duration: 0.6s;
+    font-weight: 600;
+}
+/*le di animacion */
+.rumores a:hover{
+    background-color:#2980B9;
+    color:white;
+}
+/*es el tamaño la section contacto*/
+.Suscribirse{
+    height: 93vh;
+}
+/*es el tamaño y centrado del formulario*/
+.formulario{
+    width: 40%;
+    margin: 0 auto;
+/*modifique el h1*/
+}
+.Suscribirse h1{
+    font-size: 57px;
+    color: #1d5981;
+    width: 49%;
+    margin: 0 auto;
+    padding-top: 55px;
+    padding-bottom: 15px;
+}
+/*cambio de color el asterico*/
+.abajo span{
+    color: #1d5981;
+    font-size: 15px;
+}
+/*los inputs pegados*/
+.pegados{
+    display: flex;
+    justify-content: space-between;
+}
+/*los inputs de abajo*/
+.abajo{
+    display: flex;
+    flex-direction: column;
+}
+/*diseño de los labels*/
+.formulario label{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding-top: 25px;
+    padding-bottom: 8px;
+}
+/*diseño de los placeHolder*/
+.formulario input{
+    color: black;
+    font-size: 16px;
+    outline: none;
+}
+/*diseño de todas las cajas*/
+.formulario input[type=text],input[type=email]{
+    border-radius: 13px;
+    border-style: none;
+    box-shadow: 3px 3px 5px rgb(184, 183, 183);
+    
+}
+/*diseño de las cajas de inputs de abajo*/
+.abajo input[type=text],input[type=email]{
+    padding: 18px 0px;
+    padding-left: 17px;
+    padding-right: 75px;
+}
+/*diseño de las cajas de inputs*/
+.abajo .grande[type=text]{
+    padding-bottom: 150px ;
+}
+/*diseño de los button*/
+.abajo button{
+    cursor: pointer;
+    background-color:#2980B9;
+    color:white;
+    margin: 0 auto;
+    margin-top: 34px;
+    width: 32%;
+    font-size: 17px;
+    border-radius: 10px;
+    border-style: none;
+    padding: 15px 0px;
+    box-shadow: 3px 3px 20px rgb(127, 127, 127);
+    transition-property: background-color,color;
+    transition-duration: 0.6s;
+    font-weight: 600;
+}
+/*diseño y animacion para el boton*/
+.abajo button:hover{
+    background-color: #FFFFFF;
+    color: #2980B9;
+}
+
+.Suscribirse img{
+    position: absolute;
+    width: 650px;
+    left: 29.5%;
+    top: 590%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/*diseño del div de redes*/
+.redes{
+    background:linear-gradient(30deg,#1d5981,#2980B9);
+    height: 20vh;
+    display: flex;
+}
+/*cambiar el div de los logos*/
+.logos{
+    width: 9%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+/*cambios de color de los iconos*/
+.logos i,a{
+    color:white;
+    font-size:23px;
+    margin-top: 90px;
+    transition-property:color;
+    transition-duration: 0.5s;
+}
+/*animacion de los iconos*/
+.logos i:hover{
+    color: black;
+}
+
+/*texto de copy*/
+.copy{
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: #2980B9;
+}
