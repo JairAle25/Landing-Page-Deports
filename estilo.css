@@ -659,6 +659,9 @@ lado del otro*/
 
 @media(max-width:767px){
     .cabecera{
+        position: relative;
+    }
+    .body{
         width: 100%;
     }
     .cabecera .imagencab{
@@ -673,8 +676,12 @@ lado del otro*/
         font-size: 30px;
         color: white;
     }
+    .hero::before{
+        left: 0;
+        top: 75px;
+    }
     .contHero{
-        width: 60%;
+        width: 80%;
     }
     .contHero h1{
         font-size: 55px;
