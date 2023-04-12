@@ -658,8 +658,8 @@ lado del otro*/
 }
 
 @media(max-width:767px){
-    main{
-        width: 100vw;
+    .cabecera{
+        width: 100%;
     }
     .cabecera .imagencab{
     width: 80px;
