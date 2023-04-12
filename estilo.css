@@ -535,8 +535,9 @@ lado del otro*/
 .formulario{
     width: 40%;
     margin: 0 auto;
-/*modifique el h1*/
+
 }
+/*modifique el h1*/
 .Suscribirse h1{
     font-size: 57px;
     color: #1d5981;
@@ -554,6 +555,7 @@ lado del otro*/
 .pegados{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 /*los inputs de abajo*/
 .abajo{
@@ -704,4 +706,11 @@ lado del otro*/
         font-weight: 600;
         margin-top: 20px;
     }
+    .Suscribirse img{
+        width: 50px;
+    }
+    .formulario{
+        width: 5%;
+    }
+
 }
