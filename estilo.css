@@ -694,23 +694,35 @@ lado del otro*/
         line-height: 24px;
         
     }
-    /*decoro el a del texto*/
     .contHero a{
-        background-color:#2980B9;
-        color:white;
-        border-radius: 15px;
         padding: 15px 25px;
         font-size: 17px;
-        transition-property: background-color,color;
-        transition-duration: 0.6s;
-        font-weight: 600;
         margin-top: 20px;
     }
-    .Suscribirse img{
-        width: 50px;
+    .cajasNoticias{
+        width: 90%;   
     }
-    .formulario{
-        width: 5%;
+    .noticias h1{
+        font-size: 30px;
+        padding-top: 35px;
+        padding-bottom: 0px;
+        width: 70%;
     }
-
+    .noticias .subtitulo{
+        font-size: 16px;
+    }
+    .noticias .texto{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .imgcajas{
+        display: none;
+    }
+    .cajasNoticias a{
+        
+        margin-top: 20px;
+        width: 70%;
+        padding: 10px 17px;
+        font-size: 12px;
+    }
 }
