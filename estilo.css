@@ -754,14 +754,11 @@ lado del otro*/
         font-size: 19px;
     }
     .videoFutbol h1{ 
-        font-size: 25px;
-        width: 70%;
-        line-height: 30px;
-        left: 15%;
-        top: 275%;
+        display: none;
     }
     .capa{
         top: 236%;
+        height: 50vh;
     }
     .aboutInfo{
         width: 85%;
