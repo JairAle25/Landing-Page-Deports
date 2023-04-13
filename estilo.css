@@ -755,11 +755,10 @@ lado del otro*/
     }
     .videoFutbol h1{
         font-size: 28px;
-        left: 5%;
+        left: 14%;
         top: 274%;
         width: 85%;
         line-height: 32px;
-        text-align: center;
     }
     .aboutInfo{
         width: 85%;
@@ -781,7 +780,7 @@ lado del otro*/
         height: 50%;
         left: 18%;
         top: 308%;
-        opacity: 0.;
+        opacity: 0.5;
     }
 
 
