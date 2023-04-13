@@ -751,7 +751,15 @@ lado del otro*/
 
 
 
-
+    .Entrevista h1{
+        font-size: 12px;
+    }
+    .Mejores .text h1{
+        font-size: 12px;
+    }
+    .Mejores .izq img{
+        width: 50px;
+    }
     .Suscribirse img{
         width: 100px;
     }
