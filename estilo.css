@@ -663,9 +663,16 @@ lado del otro*/
     .body{
         width: 100%;
     }
+    .cabecera{
+        position: relative;
+    }
     .cabecera .imagencab{
     width: 80px;
     padding: 10px 0px;
+    }
+    .hero::before{
+        top: 8%;
+        height: 100%;
     }
     .links a{
         display: none;
@@ -680,7 +687,7 @@ lado del otro*/
     }
     .contHero h1{
         font-size: 55px;
-        color: white;   
+        color: white; 
     }
     .contHero p{
         font-size: 19px;
@@ -698,37 +705,55 @@ lado del otro*/
     }
     .cajasNoticias .caja{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         justify-content: center;
         align-items: center;
         padding: 10px 0px;
     }
     .noticias h1{
-        font-size: 30px;
-        padding-top: 35px;
-        padding-bottom: 7px;
+        font-size: 35px;
+        padding-top: 40px;
+        padding-bottom: 0px;
         width: 80%;
     }
     .noticias .subtitulo{
         font-size: 15px;
-        padding: 0px 0px;
+        padding-bottom: 20px;
     }
     .noticias .texto{
-        font-size: 12px;
+        font-size: 13px;
         line-height: 16px;
+        padding-bottom: 25px;
     }
     .imgcajas{
         display: none;
     }
     .cajasNoticias a{
-        margin-top: 10px;
-        margin-left: 10px;
-        width: 30%;
+        margin: 0 auto;
+        width: 40%;
         padding: 10px 17px;
         font-size: 12px;
     }
+    .FixtureCont{
+        width: 75%;
+    }
+    .FixtureCont h1{
+        font-size: 35px;
+    }
+    .FixtureCont p{
+        font-size: 19px;
+    }
+
+
+
+
+
+
+
+
     .Suscribirse img{
         width: 100px;
     }
+    
 }
