@@ -700,16 +700,25 @@ lado del otro*/
         margin-top: 20px;
     }
     .cajasNoticias{
-        width: 90%;   
+        width: 90%; 
+        flex-direction: column;
+    }
+    .cajasNoticias .caja{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .noticias h1{
         font-size: 30px;
         padding-top: 35px;
-        padding-bottom: 0px;
-        width: 70%;
+        padding-bottom: 7px;
+        width: 80%;
     }
     .noticias .subtitulo{
-        font-size: 16px;
+        font-size: 15px;
+        padding: 0px 0px;
     }
     .noticias .texto{
         font-size: 12px;
@@ -719,9 +728,10 @@ lado del otro*/
         display: none;
     }
     .cajasNoticias a{
-        
-        margin-top: 20px;
-        width: 70%;
+
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 30%;
         padding: 10px 17px;
         font-size: 12px;
     }
