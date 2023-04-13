@@ -660,9 +660,6 @@ lado del otro*/
 }
 
 @media(max-width:767px){
-    .cabecera{
-        position: relative;
-    }
     .body{
         width: 100%;
     }
@@ -677,10 +674,6 @@ lado del otro*/
         display: block;
         font-size: 30px;
         color: white;
-    }
-    .hero::before{
-        left: 0;
-        top: 75px;
     }
     .contHero{
         width: 80%;
@@ -709,6 +702,7 @@ lado del otro*/
         width: 100%;
         justify-content: center;
         align-items: center;
+        padding: 10px 0px;
     }
     .noticias h1{
         font-size: 30px;
@@ -728,11 +722,13 @@ lado del otro*/
         display: none;
     }
     .cajasNoticias a{
-
         margin-top: 10px;
         margin-left: 10px;
         width: 30%;
         padding: 10px 17px;
         font-size: 12px;
+    }
+    .Suscribirse img{
+        width: 100px;
     }
 }
