@@ -741,9 +741,6 @@ lado del otro*/
     .Fixture{
         height: 41.5vh;
     }
-    .capa{
-        top: 236.5%;
-    }
     .FixtureCont{
         width: 75%;
     }
@@ -753,12 +750,11 @@ lado del otro*/
     .FixtureCont p{
         font-size: 19px;
     }
-    .videoFutbol h1{
-        font-size: 28px;
-        left: 14%;
-        top: 274%;
-        width: 85%;
-        line-height: 32px;
+    .videoFutbol{
+        display: none;
+    }
+    .capa{
+        display: none;
     }
     .aboutInfo{
         width: 85%;
@@ -767,10 +763,12 @@ lado del otro*/
     .aboutInfo h1{
         font-size: 35px;
         margin: 0 auto;
-        width: 78%;
+        width: 90%;
+        padding-top: 20px;
     }
     .aboutInfo p{
         font-size: 18px;
+        line-height: 27px;
     }
     .aboutCajas{
         display: none;
@@ -779,8 +777,8 @@ lado del otro*/
         width: 60%;
         height: 50%;
         left: 18%;
-        top: 308%;
-        opacity: 0.5;
+        top: 255%;
+        opacity: 0.2;
     }
 
 
