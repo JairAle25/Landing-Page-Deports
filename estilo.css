@@ -336,7 +336,7 @@ del hero*/
 .aboutCajas .aboutImg1{
     position: absolute;
     left: 54%;
-    top: 303.5%;
+    top: 295%;
     width: 80px;
     border-radius: 7px;
 }
@@ -344,7 +344,7 @@ del hero*/
 .aboutCajas .aboutImg2{
     position: absolute;
     left: 53.5%;
-    top: 324.3%;
+    top: 319.5%;
     width: 90px;
     border-radius: 7px;
 }
@@ -355,6 +355,9 @@ del hero*/
     top: 345.5%;
     width: 87px;
     border-radius: 7px;
+}
+.aboutCajas .mostrarR{
+    display: none;
 }
 /*hice la forma que esta atras de las cajas*/
 .forma{
@@ -703,7 +706,7 @@ lado del otro*/
         margin-top: 20px;
     }
     .noticias{
-        height: 95vh;
+        height: 174vh;
     }
     .cajasNoticias{
         width: 90%; 
@@ -724,22 +727,25 @@ lado del otro*/
         width: 80%;
     }
     .noticias .subtitulo{
-        font-size: 15px;
+        font-size: 20px;
         padding-bottom: 20px;
+        padding-top: 23px;
     }
     .noticias .texto{
-        font-size: 13px;
-        line-height: 16px;
+        font-size: 16px;
+        line-height: 22px;
         padding-bottom: 20px;
     }
     .imgcajas{
-        display: none;
+        margin-top: 25px;
+        width: 120px;
+        height: 100px;
     }
     .cajasNoticias a{
         margin: 0 auto;
-        width: 40%;
+        width: 60%;
         padding: 10px 17px;
-        font-size: 12px;
+        font-size: 17px;
     }
     .Fixture{
         height: 41.5vh;
@@ -751,18 +757,23 @@ lado del otro*/
         font-size: 35px;
     }
     .FixtureCont p{
-        font-size: 19px;
+        font-size: 18px;
+        line-height: 24px;
     }
-    .videoFutbol h1{ 
+    .videoFutbol{ 
         display: none;
     }
     .capa{
-        top: 236%;
-        height: 50vh;
+        display: none;
+    }
+    .about{
+        height: 150vh;
+        flex-direction: column;
     }
     .aboutInfo{
         width: 85%;
         margin-left: 0px;
+        margin: 0 auto;
     }
     .aboutInfo h1{
         font-size: 35px;
@@ -776,20 +787,28 @@ lado del otro*/
         line-height: 27px;
     }
     .aboutCajas{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0px 0px;
+    }
+    .about .aboutCajas .ocultarR{
         display: none;
     }
+    .about .aboutCajas .cont{
+        margin-top: 30px;
+    }
+    .about .aboutCajas .color{
+        background-color: #1d5981;
+        color: white;
+    }
     .forma{
-        width: 60%;
-        height: 50%;
-        left: 18%;
-        top: 303%;
-        opacity: 0.2;
+       display: none;
     }
     .Entrevista{
         height: 90vh;
     }
     .Entrevista h1{
-        font-size: 28px;
+        font-size: 23px;
         width: 90%;
         padding-top: 28px;
         padding-bottom: 0px;
@@ -799,23 +818,24 @@ lado del otro*/
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        width: 95%;
+        width: 97%;
         margin: 0 auto;
         text-align: center;
     }
     .items .informacion{
-        width: 85%;
+        width: 90%;
         margin: 0 auto;
     }
     .items .informacion h2{
-        font-size: 15px;
+        font-size: 14px;
         padding-top: 20px;
         padding-bottom: 0px;
     }
     .items .informacion p{
-        font-size: 13px;
+        font-size: 12px;
         line-height: 20px;
         padding-top: 10px;
+        padding-bottom: 0px;
     }
     .items .informacion .ocultarR{
         display: none;
@@ -824,10 +844,10 @@ lado del otro*/
         background-color:#2980B9;
         color:white;
         margin: 0 auto;
-        margin-top: 25px;
+        margin-top: 10px;
         width: 80%;
         padding: 10px 22px;
-        font-size: 14px;
+        font-size: 13px;
         border-radius: 10px;
         box-shadow: 3px 3px 20px rgb(127, 127, 127);
         display: flex;
@@ -841,13 +861,8 @@ lado del otro*/
         color: #2980B9;
     }
     .Entrevista img{
-        left: 4%;
-        top: 434%;
-        width: 90px;
-        opacity: 0.3;
+        display: none;
     }
-
-
 
     .Mejores{
         width: 90%;
@@ -856,21 +871,22 @@ lado del otro*/
         align-items: center;
     }
     .text{
-        width: 90%;
+        width: 95%;
     }
     .text .cont{
-        width: 80%;
+        width: 100%;
     }
     .Mejores .izq{
-        width: 10%;
+        display: none;
     }
-
     .Mejores .text h1{
-        font-size: 12px;
+        font-size: 23px;
+        padding-bottom: 0px;
     }
     .Mejores .izq img{
-        width: 50px;
+        display: none;
     }
+
     .Suscribirse img{
         width: 100px;
     }
