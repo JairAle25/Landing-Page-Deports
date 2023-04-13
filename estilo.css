@@ -425,6 +425,9 @@ lado del otro*/
     background-color: #FFFFFF;
     color: #2980B9;
 }
+.items .mostrarR{
+    display: none;
+}
 /*coloque la imagen*/
 .Entrevista img{
     position: absolute;
@@ -750,11 +753,15 @@ lado del otro*/
     .FixtureCont p{
         font-size: 19px;
     }
-    .videoFutbol{
-        display: none;
+    .videoFutbol h1{ 
+        font-size: 25px;
+        width: 70%;
+        line-height: 30px;
+        left: 15%;
+        top: 275%;
     }
     .capa{
-        display: none;
+        top: 236%;
     }
     .aboutInfo{
         width: 85%;
@@ -765,9 +772,10 @@ lado del otro*/
         margin: 0 auto;
         width: 90%;
         padding-top: 20px;
+        text-align: center;
     }
     .aboutInfo p{
-        font-size: 18px;
+        font-size: 20px;
         line-height: 27px;
     }
     .aboutCajas{
@@ -777,16 +785,89 @@ lado del otro*/
         width: 60%;
         height: 50%;
         left: 18%;
-        top: 255%;
+        top: 303%;
         opacity: 0.2;
     }
-
-
-
-    
-    .Entrevista h1{
-        font-size: 12px;
+    .Entrevista{
+        height: 90vh;
     }
+    .Entrevista h1{
+        font-size: 28px;
+        width: 90%;
+        padding-top: 28px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+    .Entrevista .items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .items .informacion{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .items .informacion h2{
+        font-size: 15px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    .items .informacion p{
+        font-size: 13px;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+    .items .informacion .ocultarR{
+        display: none;
+    }
+    .items .mostrarR{
+        background-color:#2980B9;
+        color:white;
+        margin: 0 auto;
+        margin-top: 25px;
+        width: 80%;
+        padding: 10px 22px;
+        font-size: 14px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 20px rgb(127, 127, 127);
+        display: flex;
+        justify-content: center;
+        transition-property: background-color,color;
+        transition-duration: 0.6s;
+        font-weight: 600;
+    }
+    .items .mostrarR:hover{
+        background-color: #FFFFFF;
+        color: #2980B9;
+    }
+    .Entrevista img{
+        left: 4%;
+        top: 434%;
+        width: 90px;
+        opacity: 0.3;
+    }
+
+
+
+    .Mejores{
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .text{
+        width: 90%;
+    }
+    .text .cont{
+        width: 80%;
+    }
+    .Mejores .izq{
+        width: 10%;
+    }
+
     .Mejores .text h1{
         font-size: 12px;
     }
