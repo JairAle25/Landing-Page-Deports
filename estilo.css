@@ -665,7 +665,7 @@ lado del otro*/
     color: #2980B9;
 }
 
-@media(max-width:767px){
+@media(max-width:480px){
     .body{
         width: 100%;
     }
@@ -706,7 +706,7 @@ lado del otro*/
         margin-top: 20px;
     }
     .noticias{
-        height: 174vh;
+        height: 180vh;
     }
     .cajasNoticias{
         width: 90%; 
@@ -767,7 +767,7 @@ lado del otro*/
         display: none;
     }
     .about{
-        height: 150vh;
+        height: 170vh;
         flex-direction: column;
     }
     .aboutInfo{
@@ -867,28 +867,90 @@ lado del otro*/
     .Mejores{
         width: 90%;
         margin: 0 auto;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
+        flex-direction: column-reverse;
+        height: 150vh;
+        margin: 0 auto;
     }
     .text{
         width: 95%;
     }
     .text .cont{
         width: 100%;
+        padding-bottom: 0px;
     }
     .Mejores .izq{
-        display: none;
+        display: block;
+        
     }
     .Mejores .text h1{
         font-size: 23px;
-        padding-bottom: 0px;
+        padding-bottom: 40px;
     }
     .Mejores .izq img{
-        display: none;
+        display: block;
+        width: 120%;
+        margin: 0 auto;
+    }
+    .rumores{
+        height: 55vh;
+        background:linear-gradient(30deg,#1d5981,#2980B9);
+    }
+    /*Modifico el contenido*/
+    .rumores .cont{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 60px;
+        height: 73%;
+    }
+    /*modifique el h1*/
+    .rumores h1{
+        font-size: 35px;
+        color: white;
+    }
+    /*modifique el parrafo*/
+    .rumores p{
+        color: white;
+        padding-top: 28px;
+        font-size: 16px;
+        line-height: 27px;
+        
+    }
+    /*es el tamaño la section contacto*/
+    .Suscribirse{
+        height: 120vh;
+    }
+    /*es el tamaño y centrado del formulario*/
+    .formulario{
+        width: 90%;
+    }
+    /*modifique el h1*/
+    .Suscribirse h1{
+        font-size: 35px;
+        color: #1d5981;
+        width: 80%;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .Suscribirse label{
+        padding-top: 40px;
+    }
+    .abajo button{
+        width: 50%;
     }
 
     .Suscribirse img{
-        width: 100px;
+        display: none;
     }
-    
+
+    .creditos .redes .logos{
+        width: 40%;
+    }
+    .creditos .redes .logos i{
+        font-size: 27px;
+    }
+    .copy{
+        font-size: 15px;
+    }
 }
