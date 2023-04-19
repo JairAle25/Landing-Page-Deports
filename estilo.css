@@ -408,6 +408,7 @@ html{
         color: black;
         line-height: 29px;
     }
+    /*modifico los botones de entrevista*/
     .items a{
         background-color:#2980B9;
         color:white;
@@ -424,11 +425,12 @@ html{
         transition-duration: 0.6s;
         font-weight: 600;
     }
-
+    /*Le doy un cambio cuando pase el cursor*/
     .items a:hover{
         background-color: #FFFFFF;
         color: #2980B9;
     }
+    /*oculto el boton que solo uso en el responsive mobil*/
     .items .mostrarR{
         display: none;
     }
@@ -449,10 +451,12 @@ html{
         justify-content: space-evenly;
         align-items: center;
     }
+    /*le doy posicion al texto*/
     .text{
         width: 54%;
         margin: 0 auto;
     }
+    /*le doy posicion al contenido del texto*/
     .text .cont{
         width: 60%;
         margin: 0 auto;
@@ -670,12 +674,16 @@ html{
 /*Media queri para tablets*/
 
 @media(max-width:768px){
+    /*le doy medidas al body*/
     .body{
         width: 100%;
     }
+    /*le pongo a la cabeza la propiedad para que
+    me siga*/
     .cabecera{
         position: fixed;
     }
+    /*cambio la imagen de la cabecera*/
     .cabecera .imagencab{
     width: 110px;
     padding: 15px 0px;
